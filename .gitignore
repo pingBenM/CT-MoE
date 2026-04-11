@@ -1,0 +1,37 @@
+# Checkpoints and results
+ct_moe_checkpoints/
+ct_moe_figs/
+*.pkl
+
+# Tokeniser files
+spm_ct_moe.model
+spm_ct_moe.vocab
+*.model
+*.vocab
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environments
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
