@@ -32,7 +32,7 @@ CT-MoE:         route → [expert i, expert j] → message pass via S → weight
 
 ### Why static S, not dynamic?
 
-We tried five dynamic approaches (similarity graphs, output-divergence graphs, learned gates, Hebbian rules, entropy losses). All failed via **geometric saturation**: high-dimensional expert representations collapse to near-uniform pairwise geometry, starving the graph of gradient signal. Static S sidesteps this entirely — `S_raw` receives gradients directly from the task loss.
+We tried five dynamic approaches (similarity graphs, output-divergence graphs, learned gates, Hebbian rules, entropy losses). All failed via **geometric saturation**: high-dimensional expert representations collapse to near-uniform pairwise geometry, starving the graph of gradient signal. Static S sidesteps this entirely — `S_raw` receives gradients directly from the task loss. As an extension of this work, we suggest that CT-MoE could be adapted into a dynamic architecture using a hypernetwork. This hypernetwork would generate the adjacency matrix $S$ conditioned on a sequence-level representation, allowing the collaboration topology to adapt to the specific context of the input. We leave this direction for further research.
 
 See Section 4 of the paper for the full failure analysis.
 
