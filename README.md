@@ -80,10 +80,10 @@ ct-moe/
 ## Citing
 
 ```bibtex
-@article{maor2025ctmoe,
+@article{maor2026ctmoe,
   title   = {Learning Expert Collaboration Topology in Mixture-of-Experts Language Models},
   author  = {Maor, Ben},
-  year    = {2025},
+  year    = {2026},
   url     = {https://github.com/[your-username]/ct-moe}
 }
 ```
