@@ -84,6 +84,6 @@ ct-moe/
   title   = {Learning Expert Collaboration Topology in Mixture-of-Experts Language Models},
   author  = {Maor, Ben},
   year    = {2026},
-  url     = {https://github.com/[your-username]/ct-moe}
+  url     = {https://github.com/pingBenM/ct-moe}
 }
 ```
