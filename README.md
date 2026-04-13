@@ -11,7 +11,7 @@ Ben Maor — [arXiv link: pending for arXiv endorsement]
 
 Standard sparse MoE models treat selected expert outputs as independent — they are weighted-summed with no further interaction. CT-MoE adds a single learned static adjacency matrix **S ∈ ℝᴺˣᴺ** per MoE layer that governs message passing between the selected experts after they have each processed their inputs.
 
-**S** is a direct `nn.Parameter` optimised end-to-end from the language modelling objective. It requires no auxiliary loss and adds only N² = 256 scalars per layer — less than 0.003% parameter overhead on a 65M baseline.
+**S** is a direct `nn.Parameter` optimised end-to-end from the language modelling objective. It requires no auxiliary loss and adds only N² = 256 (the paper uses N = 16) scalars per layer — less than 0.003% parameter overhead on a 65M baseline.
 
 ### Key result
 
@@ -19,8 +19,8 @@ Standard sparse MoE models treat selected expert outputs as independent — they
 |---|---|---|---|
 | Standard MoE | 25.5 | 19.0 | 22.3 |
 | CT-MoE (No Collaboration) | 26.4 | 18.9 | 22.7 |
-| CT-MoE (No Routing) | 20.0 | **17.7** | 19.0 |
-| **CT-MoE (Full)** | **19.7** | 17.5 | **18.7** |
+| CT-MoE (No Routing) | 20.0 | 17.7 | 19.0 |
+| **CT-MoE (Full)** | **19.7** | **17.5** | **18.7** |
 
 **3.6-point absolute (16.5% relative) improvement** from 1,536 additional scalar parameters.
 
