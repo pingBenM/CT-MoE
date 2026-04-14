@@ -22,7 +22,7 @@ Standard sparse MoE models treat selected expert outputs as independent — they
 | CT-MoE (No Routing) | 20.0 | 17.7 | 19.0 |
 | **CT-MoE (Full)** | **19.7** | **17.5** | **18.7** |
 
-**3.6-point absolute (16.5% relative) improvement** from 1,536 additional scalar parameters.
+**3.6-point absolute (16.1% relative) improvement** from 1,536 additional scalar parameters.
 
 The ablation shows the gain comes almost entirely from **message passing**, not routing bias.
 
