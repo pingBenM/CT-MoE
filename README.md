@@ -3,7 +3,7 @@
 Official code for the paper:
 
 **Learning Expert Collaboration Topology in Mixture-of-Experts Language Models**
-Ben Maor — [arXiv link: pending for arXiv endorsement]
+Ben Maor — [Article at OpenReview](https://openreview.net/forum?id=LjgzSKpi1A&noteId=LjgzSKpi1A)
 
 ---
 
