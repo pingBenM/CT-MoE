@@ -144,7 +144,7 @@ class Config:
   title   = {Learning Expert Collaboration Topology in
              Mixture-of-Experts Language Models},
   author  = {Maor, Ben},
-  journal = {arXiv preprint arXiv:[TBD]},
+  journal = {OpenReview preprint:(https://openreview.net/forum?id=LjgzSKpi1A&noteId=LjgzSKpi1A)},
   year    = {2026}
 }
 ```
